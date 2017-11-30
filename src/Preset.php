@@ -76,5 +76,7 @@ class BulmaPreset extends Preset
         }
 
         (new Filesystem)->copyDirectory(__DIR__.'/stubs/resources/views', resource_path('views'));
+
+        copy(__DIR__.'/stubs/app/Http/Controllers/HomeController.php', base_path('app/Http/Controllers/HomeController.php'));
     }
 }
