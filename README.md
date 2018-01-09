@@ -6,5 +6,5 @@ Based on:
 
 Installation:
  * Install Package `composer require nevoxx/laravel-frontend-preset-bulma`
- * Install Preset `php artisan bulma` **or** `php artisan bulma-auth`
+ * Install Preset `php artisan preset bulma` **or** `php artisan preset bulma-auth`
  * Update and rebuild assets `npm install && npm run dev`
