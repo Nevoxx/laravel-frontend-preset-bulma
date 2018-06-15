@@ -1,8 +1,11 @@
-# Bulma Frontend Preset for Laravel 5.5
+# Bulma Frontend Preset for Laravel
+
+Requirements:
+ * Laravel >= 5.5
 
 Based on:
  * Font Awesome 4.7
- * Bulma 0.6.1
+ * Bulma 0.7
 
 Installation:
  * Install Package `composer require nevoxx/laravel-frontend-preset-bulma`
