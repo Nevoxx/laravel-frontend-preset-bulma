@@ -27,7 +27,7 @@
                         </div>
 
                         <div class="field">
-                            <label class="label" for="password">Passwort</label>
+                            <label class="label" for="password">Password</label>
                             <div class="control">
                                 <input type="password"
                                        id="password"

@@ -27,9 +27,9 @@ class BulmaPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bulma' => '^0.6.1',
-            'font-awesome' => '^4.7.0',
-        ] + Arr::except($packages, ['bootstrap-sass', 'foundation-sites']);
+            'bulma' => '^0.7',
+            'font-awesome' => '^4.7',
+        ] + Arr::except($packages, ['bootstrap-sass', 'foundation-sites', 'popper.js']);
     }
 
     protected static function updateSass()

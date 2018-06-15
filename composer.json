@@ -1,10 +1,10 @@
 {
   "name": "nevoxx/laravel-frontend-preset-bulma",
-  "description": "Bulma Frontend Preset for Laravel 5.5",
+  "description": "Bulma Frontend Preset for Laravel",
   "keywords": ["laravel", "preset", "bulma"],
   "license": "MIT",
   "require": {
-    "laravel/framework": "5.5.*"
+    "laravel/framework": "5.5 - 5.6"
   },
   "autoload": {
     "psr-4": {
