@@ -29,18 +29,18 @@ class BulmaPreset extends Preset
         return [
             'bulma' => '^0.7',
             'font-awesome' => '^4.7',
-        ] + Arr::except($packages, ['bootstrap-sass', 'foundation-sites', 'popper.js']);
+        ] + Arr::except($packages, ['bootstrap', 'popper.js']);
     }
 
     protected static function updateSass()
     {
-        $sassFiles = glob(resource_path('/assets/sass/*.*'));
+        $sassFiles = glob(resource_path('/sass/*.*'));
 
         foreach ($sassFiles as $sassFile) {
             (new Filesystem)->delete($sassFile);
         }
 
-        copy(__DIR__.'/stubs/resources/assets/sass/app.scss', resource_path('assets/sass/app.scss'));
+        copy(__DIR__.'/stubs/resources/assets/sass/app.scss', resource_path('sass/app.scss'));
     }
 
     protected static function updateBootstrapping()
@@ -49,7 +49,7 @@ class BulmaPreset extends Preset
             resource_path('assets/js/bootstrap.js')
         );
 
-        copy(__DIR__.'/stubs/resources/assets/js/bootstrap.js', resource_path('assets/js/bootstrap.js'));
+        copy(__DIR__.'/stubs/resources/assets/js/bootstrap.js', resource_path('js/bootstrap.js'));
     }
 
     protected static function updateWelcomePage()
